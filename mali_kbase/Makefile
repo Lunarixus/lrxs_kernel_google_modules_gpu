@@ -25,6 +25,18 @@ ifeq ($(KDIR),)
     $(error Must specify KDIR to point to the kernel to target))
 endif
 
+# Pixel integration configuration values
+#
+# Core kbase configuration options
+CONFIG_MALI_EXPERT=y
+CONFIG_MALI_MIDGARD_DVFS=y
+# Pixel integration specific configuration options
+CONFIG_MALI_PLATFORM_NAME="pixel"
+CONFIG_MALI_PIXEL_GPU_QOS=y
+CONFIG_MALI_PIXEL_GPU_BTS=y
+CONFIG_MALI_PIXEL_GPU_THERMAL=y
+CONFIG_MALI_PIXEL_GPU_SECURE_RENDERING=y
+
 #
 # Default configuration values
 #
