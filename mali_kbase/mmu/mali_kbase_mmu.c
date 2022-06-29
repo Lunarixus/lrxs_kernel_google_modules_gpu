@@ -128,17 +128,6 @@ static bool mmu_flush_cache_on_gpu_ctrl(struct kbase_device *kbdev)
 }
 
 /**
- * mmu_flush_pa_range() - Flush physical address range
- *
- * @kbdev:    kbase device to issue the MMU operation on.
- * @phys:     Starting address of the physical range to start the operation on.
- * @nr_bytes: Number of bytes to work on.
- * @op:       Type of cache flush operation to perform.
- *
- * Issue a cache flush physical range command.
- */
-
-/**
  * mmu_invalidate() - Perform an invalidate operation on MMU caches.
  * @kbdev:      The Kbase device.
  * @kctx:       The Kbase context.
